@@ -79,7 +79,7 @@ If both steps are successful you are ready to download and configure the compone
   ![reserv](https://github.com/marcontino/getback/blob/master/screenshots/reservationmat.png) <br/><br/>
   
   Open **Roles and Permission** and set accessibility in **Public* section like in the image above.<br/>
-  ![permission](https://github.com/marcontino/getback/blob/master/screenshots/permission.png) <br/><br/>
+  ![permission](https://github.com/marcontino/getback/blob/master/screenshots/permissions.png) <br/><br/>
   
   Create some table in **Material** and **GET BACK** will be ready.
   

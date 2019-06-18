@@ -73,10 +73,10 @@ If both steps are successful you are ready to download and configure the compone
 
 ### CONFIGURE STRAPI BACKEND
 
-* Enter ** Strapi ** and add ** Material ** and ** Reservationmat ** under ** Content Type Builder ** and filling them with the following fields.
-  ![role](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/role.png)<br/> > ![Auth](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/authenticated.png) > ![User](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/userPermission.png) and checked the field ![Check](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/check.png)
+* Enter **Strapi** and add **Material** and **Reservationmat** under **Content Type Builder** and filling them with the following fields.<br/>
+  ![role](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/role.png)<br/><br/>(https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/authenticated.png) <br/><br/>(https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/userPermission.png) <br/><br/>(https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/check.png) <br/><br/>
   
-  Open **Roles and Permission**> and set accessibility like in images above.<br/>
+  Open **Roles and Permission** and set accessibility like in images above.<br/>
   
   Create some table in ** Material ** and ** GET BACK ** will be ready.
 

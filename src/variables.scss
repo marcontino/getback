@@ -1,0 +1,122 @@
+// NORMALIZER
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+// VARIABILI 
+
+// https://skillsandmore.org/usi-data-maps-sass/
+
+@function set-attribute($school, $attribute) {
+  @return map-get(map-get($colors, $school), $attribute);
+}
+
+$colors: ('web': (start: rgba(39, 14, 122, 1),
+    end: rgba(184, 14, 122, 1),
+    angle: 30deg),
+  'acting': (start:  rgba(178, 103, 136, 1) ,
+    end: rgba(255, 103, 160, 1),
+    angle: 30deg),
+  'fotografia': (start:  rgba(49, 172, 228, 1),
+    end: rgba(142, 152, 228, 1),
+    angle: 30deg),
+  'storytelling': (start:  rgba(246, 109, 155, 1),
+    end: rgba(211, 156, 228, 1),
+    angle: 30deg),
+  'filmaking': (start: rgba(79, 221, 160, 1),
+    end:rgba(181,
+    255, 168, 1),
+    angle: 30deg),
+  'fumetto': (start: rgba(39, 14, 122, 1),
+    end: rgba(184, 14, 122, 1),
+    angle: 30deg),
+  '3d': (start: rgba(39, 14, 122, 1),
+    end: rgba(184, 14, 122, 1),
+    angle: 30deg),
+  'grafica': (start: #ff2915,
+    end: #ffdd47,
+    angle: 30deg),
+);
+
+@mixin gradient($angolo, $colore1, $colore2) {
+  background: -moz-linear-gradient(9.28% 72.02% $angolo, $colore1 0%, $colore2 100%);
+  background: -webkit-linear-gradient($angolo, $colore1 0%, $colore2 100%);
+  background: -webkit-gradient(linear, 9.28% 72.02%, 71.21% 42.9%, color-stop(0, $colore1), color-stop(1, $colore2));
+  background: -o-linear-gradient($angolo, $colore1 0%, $colore2 100%);
+  background: -ms-linear-gradient($angolo, $colore1 0%, $colore2 100%);
+  background: linear-gradient($angolo*2, $colore1 0%, $colore2 100%);
+  background-repeat: no-repeat;
+}
+
+@mixin border-gradient($angolo, $colore1, $colore2) {
+  border: 1px solid;
+  border-color: -moz-linear-gradient(9.28% 72.02% $angolo, $colore1 0%, $colore2 100%);
+  border-color: -webkit-linear-gradient($angolo, $colore1 0%, $colore2 100%);
+  border-color: -webkit-gradient(linear, 9.28% 72.02%, 71.21% 42.9%, color-stop(0, $colore1), color-stop(1, $colore2));
+  border-color: -o-linear-gradient($angolo, $colore1 0%, $colore2 100%);
+  border-color: -ms-linear-gradient($angolo, $colore1 0%, $colore2 100%);
+  border-color: linear-gradient($angolo*2, $colore1 0%, $colore2 100%);
+  background-repeat: no-repeat;
+}
+@mixin shadow {
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.4);
+}
+
+$font-text: 'Open Sans',
+sans-serif;
+$font-title: 'Baloo Bhai',
+cursive;
+
+
+body {
+  margin: 0;
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  // padding: 5px;
+  font-family: $font-text;
+  background-color: rgb(250, 250, 250);
+}
+
+input {
+  font-size: 1em;
+}
+
+%box {
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+section.home {
+  padding-top: 12vh;
+  overflow: hidden;
+  // max-width: 500px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+@media (min-width: 500px){
+  section.home {
+    max-width: 500px;
+  }
+}
+
+// prova
+.prof {
+  @extend %box;
+  margin: 1em;
+  padding: .5em;
+}
+.animation-container {
+  width: 90%;
+}

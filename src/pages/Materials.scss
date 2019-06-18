@@ -1,0 +1,193 @@
+@import './../variables.scss';
+.container-room{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    overflow-x: hidden;
+    &>*{
+        box-sizing: border-box;
+    }
+}
+
+.list-rooms{
+    //cate
+    width: 92%;
+    min-height: 70%;
+    height: 82%;
+    margin-top: 15px;
+    position: relative;
+    @include shadow();
+    &>.subTitle{
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+    
+    &>ul{
+        
+        flex-direction: column;
+        height: 76%;
+        list-style: none;
+        padding: 0 .5em;
+        overflow-y: scroll;
+        
+        &>li{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            position: relative;
+            padding: 12px;
+            margin: .25em 0;
+            border: 1px solid #333;
+            border-radius: 50px;
+            &>p{
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
+    }
+}
+ ul li:last-child {
+    margin-bottom: 4em;
+  }
+.headerImg{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    // @include gradient(0deg, set-attribute(filmaking, start), set-attribute(filmaking, end));
+    @include gradient(set-attribute(web, angle), set-attribute(web, start), set-attribute(web, end));
+    background-color: linear-gradient(60deg, #270e7a 0%, #b80e7a 100%);
+    img{
+        height: 100%;
+    }
+    opacity: 0.8;
+}
+.scroll{
+    width: 100%;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    text-align: center;
+    img{
+        height: 15px;
+    }
+}
+.free,.noFree{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.free{
+    background-color: #bbf781;
+    color: #4c6b30;
+}
+.noFree{
+    pointer-events: none;
+    background-color: #ea496c;
+}
+.show{
+    display: block;
+    font-weight: bold;
+}
+.hidden{
+    display:none; 
+}
+.error{
+    color: red;
+    background-color: rgba(250, 86, 86, 0.445);
+    border: 1px solid red;
+    padding: 5px;
+  
+}
+.success{
+    color: green;
+    background-color: rgba(100, 250, 86, 0.445);
+    border: 1px solid green;
+    padding: 5px;
+    margin: 9px 0px;
+    text-align: center;
+}
+ul>li.formOpen {
+    border-radius: 20px;
+    display: block;
+
+    &>.title{
+        display: flex;
+        width: 100%;
+        &>p{
+            width: 100%;
+            text-align: center;
+        }
+        a{
+            position: absolute;
+            right: 1.8em;
+        }
+    }
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    &>h2{
+        width: 100%;
+    }
+}
+
+.start-box,
+.end-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: .2em
+}
+.titleNote{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+input[type="time"],textarea{
+    
+    border-radius: 20px;
+    border: 1px solid #333;
+    &:focus{
+        outline-color: transparent;
+       }
+      
+       &:-webkit-autofill,
+       &:-webkit-autofill:hover, 
+       &:-webkit-autofill:focus, 
+       &:-webkit-autofill:active,
+       &:active{
+           box-shadow: 0 0 0px 1000px white inset;
+           background-color: transparent;
+       }
+}
+input[type="time"]{
+    width: 100%;
+    height: 2.3em;
+    text-align: center;
+}
+textarea{
+    padding: 0.8em;
+    text-align: left;
+}
+input[type="submit"]{
+    width: 50%;
+    height: 2.5em;
+    margin-top: 0.8em;
+    border: 0;
+    border-radius: .5em;
+    box-shadow: none;
+    background-color: #bbf781;
+    color: #4c6b30;
+    font-size: 1.1em;
+    transform: translateX(100%);
+}

@@ -1,0 +1,124 @@
+@import '../variables.scss';
+
+.home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: $font-text;
+}
+
+.tabbar {
+    background-color: #fff;
+    max-width: 500px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 96%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    z-index: 2;
+
+    img,
+    svg {
+        width: 100%;
+
+    }
+}
+
+
+.tabs {
+    margin: 2% 1%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+
+    a {
+        text-decoration: none;
+        color: #777;
+        text-transform: uppercase;
+        padding: 1%;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition-duration: 0.6s;
+        width: 60px;
+        pointer-events: none;
+        height: auto;
+
+        svg {
+            pointer-events: all;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 0px;
+            margin-top: 2px;
+            overflow: visible;
+
+            g,
+            path {
+                pointer-events: none;
+            }
+        }
+    }
+
+    [name=focus] {
+        svg {
+            fill: white;
+        }
+    }
+
+    #selector {
+        margin: 4px;
+        height: 100%;
+        display: inline-block;
+        position: absolute;
+        // left: 0px;
+        top: 2px;
+        z-index: 1;
+        border-radius: 50%;
+        transition-duration: 0.55s;
+        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.05);
+        @include gradient(set-attribute(web, angle), set-attribute(web, start), set-attribute(web, end));
+    }
+}
+
+.thinmoment {
+    animation-name: thin;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes thin {
+    from {
+        // height: 100%;
+    }
+
+    50% {
+        
+        top: 50%;
+        height: 10%;
+        width: 10%;
+    }
+
+    to {
+        // height: 100%;
+    }
+}
+
+//// NOTIFICHE
+span[id*='span'] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: set-attribute(web, end);
+    border: 3px solid white;
+    width: 19px;
+    height: 19px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    border-radius: 50%
+}

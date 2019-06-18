@@ -1,0 +1,48 @@
+@import './../variables.scss';
+
+
+header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include gradient(set-attribute(web, angle), set-attribute(web, start), set-attribute(web, end));
+    width: 100%;
+    justify-content: space-between;
+    height: 8vh;
+    padding: 2vh;
+    z-index: 2;
+    transform: rotate(-3deg) translateY(-3vh) translateX(-20px);
+    .contain{
+        max-width: 500px;
+        position: absolute;
+        top: 0;
+        transform: rotate(3deg);
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        padding-top: .8em;
+    } 
+    h1 {
+        position: absolute;
+        bottom: -22px;
+        right: 75px;
+        // transform: rotate(3deg);
+        vertical-align: middle;
+        color: black;
+        font-size: 1.2em;
+
+    }
+
+    img{
+        height: 25px;
+        width: auto;
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+    img:last-child{
+       margin: 0;
+       align-self: flex-end;
+       padding-right: 1em;
+    }
+}

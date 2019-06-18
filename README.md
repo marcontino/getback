@@ -1,6 +1,6 @@
 ### GET BACK | MATERIAL RENTAL SYSTEM FOR HYP APP
 
-![HYP](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/login.png)
+![GETBACK](https://github.com/marcontino/getback/blob/master/screenshots/getback.png)
 
 **HYP** is the prototype of a web app that aims to improve communication between students and the school..
 
@@ -74,16 +74,16 @@ If both steps are successful you are ready to download and configure the compone
 ### CONFIGURE STRAPI BACKEND
 
 * Enter **Strapi** and add **Material** and **Reservationmat** under **Content Type Builder** and filling them with the following fields.<br/>
-  ![role](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/role.png)<br/><br/>
-  ![alt text](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/authenticated.png) <br/><br/>
-  ![alt text](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/userPermission.png) <br/><br/>
-  ![alt text](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/check.png) <br/><br/>
-  
-  Open **Roles and Permission** and set accessibility like in images above.<br/>
-  ![alt text](https://github.com/lomba1992/loginWithStrapi/blob/master/schermata/check.png) <br/><br/>
 
+  ![material](https://github.com/marcontino/getback/blob/master/screenshots/material.png)<br/><br/>
+  ![reserv](https://github.com/marcontino/getback/blob/master/screenshots/reservationmat.png) <br/><br/>
   
-  Create some table in ** Material ** and ** GET BACK ** will be ready.
+  Open **Roles and Permission** and set accessibility in **Public* section like in the image above.<br/>
+  ![permission](https://github.com/marcontino/getback/blob/master/screenshots/permission.png) <br/><br/>
+  
+  Create some table in **Material** and **GET BACK** will be ready.
+  
+  ![add](https://github.com/marcontino/getback/blob/master/screenshots/add.png) <br/><br/>
 
 
 
